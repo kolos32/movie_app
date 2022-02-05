@@ -4,7 +4,7 @@ import "./Navigation.css";
 
 function Navigation() {
     return (
-        <div>
+        <div className="nav">
             <Link to="/">Главная</Link>
             <Link to="/about">О проекте</Link>
         </div>

@@ -5,8 +5,17 @@ import "./Navigation.css";
 function Navigation() {
     return (
         <div className="nav">
-            <Link to="/">Главная</Link>
-            <Link to="/about">О проекте</Link>
+            <Link to="/">Главная страница</Link>
+            <Link
+        to={{
+          pathname: "/about",
+          state: {
+            fromLocation: true,
+          },
+        }}
+      >
+        О проекте
+      </Link>
         </div>
     );    
 }
